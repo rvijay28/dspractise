@@ -52,6 +52,20 @@ public class App
         twoStack.push1(55);
         twoStack.visit();
 
+        int[] arr = {18,19,20,20,20,22,23,23,24};
+        BinarySearch bs = new BinarySearch();
+        boolean found = bs.search(22, arr);
+        int totalOccurrence = 0;
+        if (found) {
+            int first = bs.findFirstOccurrence(22, arr);
+            int last = bs.findLastOccurrence(22, arr);
+            System.out.println("First occurrence index = " + first);
+            System.out.println("Last occurrence index = " + last);
+            totalOccurrence = (last - first) + 1;
+        } else {
+
+        }
+        System.out.println("Total occurrence = " + totalOccurrence);
 
     }
 }
