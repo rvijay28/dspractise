@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Stack;
+
 /**
  * Hello world!
  *
@@ -66,6 +68,14 @@ public class App
 
         }
         System.out.println("Total occurrence = " + totalOccurrence);
+        System.out.println("*************");
+        Stack<Integer> stack1 = new Stack<>();
+        stack1.push(45);
+        stack1.push(16);
+        stack1.push(5);
+        stack1.push(56);
+        Stack<Integer> sortedStack = SortedStack.sort(stack1);
+        System.out.println("Sorted stack: " + sortedStack);
 
     }
 }
